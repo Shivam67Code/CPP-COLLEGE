@@ -28,10 +28,15 @@ public:
     this->color = color;
     this->speed = speed;
   }
+  // Destructor
+  ~Car()
+  {
+    cout << "!!!...Destructor Called ....." << endl;
+  }
 
   void start()
   {
-    cout << "Vroom Vroommm.......!!!";
+    cout << "....Vroom Vroommm.......!!!" << endl;
   }
   void details()
   {
@@ -47,12 +52,18 @@ public:
   {
     cout << "Stoppeddd.......!!!";
   }
+  // As a standalone function outside the class:
+  void deleteCar(Car *car)
+  {
+    delete car;
+  }
 };
 int main()
 {
-  // object defination
+  // object definition
   Car car1("Mustang GT", "Classic", 6767, "HOT RED", 670);
 
+  car1.start();
   car1.details();
 
   return 0;
