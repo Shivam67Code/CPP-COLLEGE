@@ -1,0 +1,6 @@
+This is the final day on 5th July. 
+
+
+--> This is about template and exception handling.
+
+ . Function Templates.
